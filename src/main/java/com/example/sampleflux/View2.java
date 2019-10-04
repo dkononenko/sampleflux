@@ -20,7 +20,7 @@ public class View2 extends VerticalLayout implements BeforeLeaveObserver {
         setHeight("100%");
 
         final UI ui = UI.getCurrent();
-        Label label = new Label("werwerwr");
+        Label label = new Label("expired");
         compositeDisposable.add(
                 store.values()
                         .observeOn(Schedulers.from(runnable -> ui.access(runnable::run)))
